@@ -57,10 +57,10 @@ function App() {
 	);
 }
 
-function Identity(props) {
+function Identity({ imgUrl }) {
 	return (
 		<div className="identity">
-			<img src="assets/me.png" alt="Liula"></img>
+			<img src={imgUrl} alt="Liul"></img>
 			<div>
 				<Name myName={data.myName} />
 				<Job myJob1={data.myJob1} myJob2={data.myJob2} />
@@ -69,37 +69,36 @@ function Identity(props) {
 	);
 }
 
-function Name(props) {
-	const name = props.myName;
+function Name({ myName }) {
 	return (
 		<div>
-			<h2>{name}</h2>
+			<h2>{myName}</h2>
 		</div>
 	);
 }
 
-function Job(props) {
+function Job({ myJob1, myJob2 }) {
 	return (
 		<div className="jobs">
-			<h3>{props.myJob1}</h3>
+			<h3>{myJob1}</h3>
 			<p>and</p>
-			<h3>{props.myJob2}</h3>
+			<h3>{myJob2}</h3>
 		</div>
 	);
 }
 
-function About(props) {
+function About({ about }) {
 	return (
 		<div className="about">
-			<p>{props.about}</p>
+			<p>{about}</p>
 		</div>
 	);
 }
 
-function Techs(props) {
+function Techs({ techs }) {
 	return (
 		<div className="techs">
-			{props.techs.map((tech) => {
+			{techs.map((tech) => {
 				let bgColor = { backgroundColor: tech.color };
 				return (
 					<p className="tech" style={bgColor}>
