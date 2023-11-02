@@ -57,25 +57,11 @@ body {
 	text-align: center;
 }
 
-.techs-0,
-.techs-1,
-.techs-2 {
+.tech {
 	display: inline-block;
 	color: rgba(255, 255, 255, 0.794);
 	padding: 0.2rem 0.7rem;
 	margin: 0.3rem;
 	border-radius: 0.5rem;
 	font-weight: bold;
-}
-
-.techs-0 {
-	background-color: rgb(38, 74, 106);
-}
-
-.techs-1 {
-	background-color: green;
-}
-
-.techs-2 {
-	background-color: rgb(137, 89, 0);
 }
