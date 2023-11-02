@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Profile-Card
+with React.js
+
+![profile_card](https://github.com/sgc93/Profile-Card/assets/109880887/6e9a2622-7749-4980-9398-ec56006b37d0)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
